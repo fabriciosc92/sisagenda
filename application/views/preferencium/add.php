@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-md-12">
+      	<div class="box box-info">
+            <div class="box-header with-border">
+              	<h3 class="box-title">Preferencium Add</h3>
+            </div>
+            <?php echo form_open('preferencium/add'); ?>
+          	<div class="box-body">
+          		<div class="row clearfix">
+					<div class="col-md-6">
+						<label for="preferencia" class="control-label">Preferencia</label>
+						<div class="form-group">
+							<input type="text" name="preferencia" value="<?php echo $this->input->post('preferencia'); ?>" class="form-control" id="preferencia" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<label for="valor" class="control-label">Valor</label>
+						<div class="form-group">
+							<input type="text" name="valor" value="<?php echo $this->input->post('valor'); ?>" class="form-control" id="valor" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<label for="descricao" class="control-label">Descricao</label>
+						<div class="form-group">
+							<input type="text" name="descricao" value="<?php echo $this->input->post('descricao'); ?>" class="form-control" id="descricao" />
+						</div>
+					</div>
+				</div>
+			</div>
+          	<div class="box-footer">
+            	<button type="submit" class="btn btn-success">
+            		<i class="fa fa-check"></i> Save
+            	</button>
+          	</div>
+            <?php echo form_close(); ?>
+      	</div>
+    </div>
+</div>
